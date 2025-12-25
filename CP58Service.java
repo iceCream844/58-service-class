@@ -1,29 +1,3 @@
-package com.atf.offshore.vka.commissionCalculation.service;
-
-import com.atf.offshore.micro.common.exception.ServiceAppException;
-import com.atf.offshore.micro.common.service.BaseOssFileConverter;
-import com.atf.offshore.micro.common.service.OssTemplateService;
-import com.atf.offshore.vka.commissionCalculation.constant.SftpPathConstant;
-import com.atf.offshore.vka.commissionCalculation.dao.AffiliateDAO;
-import com.atf.offshore.vka.commissionCalculation.dao.CommissionCP58DAO;
-import com.atf.offshore.vka.commissionCalculation.dao.CommissionOCBCGiroDAO;
-import com.atf.offshore.vka.commissionCalculation.dao.CompanyDAO;
-import com.atf.offshore.vka.commissionCalculation.dao.ConsumeOCBCGiroFileDAO;
-import com.atf.offshore.vka.commissionCalculation.dao.DistributeCP58FileDAO;
-import com.atf.offshore.vka.commissionCalculation.dao.PlannerDAO;
-import com.atf.offshore.vka.commissionCalculation.entity.Affiliate;
-import com.atf.offshore.vka.commissionCalculation.entity.CommissionCP58;
-import com.atf.offshore.vka.commissionCalculation.entity.CommissionOCBCGiro;
-import com.atf.offshore.vka.commissionCalculation.entity.Company;
-import com.atf.offshore.vka.commissionCalculation.entity.ConsumeOCBCGiroFile;
-import com.atf.offshore.vka.commissionCalculation.entity.DistributeCP58File;
-import com.atf.offshore.vka.commissionCalculation.entity.Planner;
-import com.atf.offshore.vka.commissionCalculation.enums.ComcalError;
-import com.atf.offshore.vka.commissionCalculation.enums.CommissionCP58JobType;
-import com.atf.offshore.vka.commissionCalculation.enums.CommissionReceiverType;
-import com.atf.offshore.vka.commissionCalculation.enums.JobStatus;
-import com.atf.offshore.vka.commissionCalculation.extraction.BaseSFTP;
-import com.atf.offshore.vka.commissionCalculation.vo.GenericResponseVo;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.jcraft.jsch.JSchException;
@@ -844,3 +818,4 @@ public class CP58Service extends BaseOssFileConverter {
                 .collect(Collectors.toList());
     }
 }
+
